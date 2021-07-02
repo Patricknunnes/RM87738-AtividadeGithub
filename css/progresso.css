@@ -1,0 +1,24 @@
+.metas {
+    margin-top: 90px;
+    text-align: center;
+    font-family: roboto;
+}
+
+#donutchart {
+    width: 800px;
+    height: 650px;
+}
+
+.borda {
+    background-color: #011725;
+}
+
+#curve_chart {
+    width: 800px;
+    height: 650px;
+}
+
+.submeta {
+    font-size: 0.8cm;
+}
+

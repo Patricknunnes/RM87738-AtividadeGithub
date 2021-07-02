@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Track · Saúde e vida!</title>
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/progresso.css">
+    <!-- Gráfico 1 -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Progresso', 'Porcentagem'],
+          ['Concluído',     37],
+          ['Faltam',     63],
+        ]);
+
+        var options = {
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+    <!-- Gráfico 2 -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Semana', 'Peso'],
+          [1,  90],
+          [2,  95],
+          [3,  87],
+          [4,  80]
+        ]);
+
+        var options = {
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+  <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark ", style="background-color: #011725;">
+          <a class="navbar-brand" href="#">Health Track</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfil.html">Perfil <span class="sr-only">(página atual)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="progresso.html">Progresso <span class="sr-only">(página atual)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="atividades.html">Atividades diárias <span class="sr-only">(página atual)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Configurações
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="login.html">Sair</a>
+                </div>
+            </ul>
+          </div>
+        </nav>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-2 col-0 borda"></div>
+        <div class="col-xl-8 col-12">
+          <div class="metas">
+            <h4>Metas e progressos</h4>
+            <div class="grafico" style="margin-top: 40px;">
+              <h5 class="submeta">Porcentagem de meta</h5>
+              <div class="mx-auto" id="donutchart"></div>
+            </div>
+            <div>
+              <h5 class="submeta">Peso</h5>
+              <div class="mx-auto" id="curve_chart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-0 borda"></div>
+      </div>
+    </div>
+  </main>
+  <script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

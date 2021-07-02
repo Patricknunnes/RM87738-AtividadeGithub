@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Track · Saúde e vida!</title>
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/atividades.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark ", style="background-color: #011725;">
+        <a class="navbar-brand" href="#">Health Track</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="perfil.html">Perfil <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progresso.html">Progresso <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="atividades.html">Atividades diárias <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Configurações
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="login.html">Sair</a>
+              </div>
+          </ul>
+        </div>
+      </nav>
+</header>
+<main>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-2 col-sm-0 bordas"></div>
+      <div class="col-xl-8 col-sm-12">
+        <div class="row">
+          <div class="col-7 col-xl-9">
+            <h2 class="title">Atividades diárias</h2>
+          </div>
+          <div class="col-3 col-xl-3">
+            <button type="button" class="btn btn-secondary button-add">Adicionar atividade</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="row" id="line">
+              <hr size="3" width="100%" color="#EEEEEE" style="margin-top: 20px;">
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-sm-13">
+            <div class="card">
+              <img src="img/atividadecorrida.jpg" class="card-img-top" alt="">
+            </div>
+          </div>
+          <div class="col-10 col-xl-7 description">
+            <h4 class="tipo-atividade">Corrida</h4>
+            <div class="row">
+              <div class="col-4">
+                <h5 class="dx">4 km</h5>
+                <h6 class="xd">Dist.</h6>
+              </div>
+              <div class="col-4">
+                <h5 class="dx">30 min</h5>
+                <h6 class="xd">Tempo</h6>
+              </div>
+              <div class="col-4">
+                <h5 class="dx">8 km/h</h5>
+                <h6 class="xd">Vel. Média</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 col-xl-1">
+            <div class="row d-flex justify-content-end">
+              <button type="button" class="btn btn-dark edit"><i class="far fa-edit"></i></button>
+            </div>
+            <div class="row d-flex justify-content-end">
+              <button type="button" class="btn btn-dark delete"><i class="far fa-trash-alt"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="row" id="line">
+              <hr size="3" width="100%" color="#EEEEEE" style="margin-top: 20px;">
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-sm-13">
+            <div class="card">
+              <img src="img/atividadeciclismo.jpg" class="card-img-top" alt="">
+            </div>
+          </div>
+          <div class="col-10 col-xl-7 description">
+            <h4 class="tipo-atividade">Ciclismo</h4>
+            <div class="row">
+              <div class="col-4">
+                <h5 class="dx">50 km</h5>
+                <h6 class="xd">Dist.</h6>
+              </div>
+              <div class="col-4">
+                <h5 class="dx">180 min</h5>
+                <h6 class="xd">Tempo</h6>
+              </div>
+              <div class="col-4">
+                <h5 class="dx">16,6 km/h</h5>
+                <h6 class="xd">Vel. Média</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 col-xl-1">
+            <div class="row d-flex justify-content-end">
+              <button type="button" class="btn btn-dark edit"><i class="far fa-edit"></i></button>
+            </div>
+            <div class="row d-flex justify-content-end">
+              <button type="button" class="btn btn-dark delete"><i class="far fa-trash-alt"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="row" id="line">
+              <hr size="3" width="100%" color="#EEEEEE" style="margin-top: 20px;">
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-sm-13">
+            <div class="card">
+              <img src="img/atividadecorrida.jpg" class="card-img-top" alt="">
+            </div>
+          </div>
+          <div class="col-10 col-xl-7 description">
+            <h4 class="tipo-atividade">Corrida</h4>
+            <div class="row">
+              <div class="col-4">
+                <h5 class="dx">8 km</h5>
+                <h6 class="xd">Dist.</h6>
+              </div>
+              <div class="col-4">
+                <h5 class="dx">60 min</h5>
+                <h6 class="xd">Tempo</h6>
+              </div>
+              <div class="col-4">
+                <h5 class="dx">8 km/h</h5>
+                <h6 class="xd">Vel. Média</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 col-xl-1">
+            <div class="row d-flex justify-content-end">
+              <button type="button" class="btn btn-dark edit"><i class="far fa-edit"></i></button>
+            </div>
+            <div class="row d-flex justify-content-end">
+              <button type="button" class="btn btn-dark delete"><i class="far fa-trash-alt"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-2 col-sm-0 bordas"></div>
+    </div>
+  </div>
+</main>
+    <script src="https://kit.fontawesome.com/680b42c960.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

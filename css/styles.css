@@ -1,0 +1,48 @@
+
+/* Slider */
+
+.container-fluid {
+    padding: 0;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 100vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    color: #fff;
+    text-shadow: black 0.15em 0.15em 0.25em
+}
+
+.main-btn {
+    background-color: #011725;
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 41, 94, 0.479);
+    border: rgb(6, 2, 48);
+}
+

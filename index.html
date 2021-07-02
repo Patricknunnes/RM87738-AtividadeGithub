@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Track · Saúde e vida!</title>
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark ", style="background-color: #011725;">
+        <a class="navbar-brand" href="#">Health Track</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="perfil.html">Perfil <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progresso.html">Progresso <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="atividades.html">Atividades diárias <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Configurações
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="login.html">Sair</a>
+              </div>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar Perfil</button>
+          </form>
+        </div>
+      </nav>
+</header>
+  <main>
+    <div class="container-fluid">
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#mainSlider" data-slide-to="1"></li>
+          <li data-target="#mainSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/dieta.jpg" class="d-block w-100 h-100" alt="Dietas">
+            <div class="carousel-caption d-none d-block">
+              <h2>Quer dietas feitas por nutricionistas?</h2>
+              <p>Temos diversos tipos de dietas para que cumpra o seu objetivo</p>
+              <a href="login.html" class="main-btn">Comece já</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/melhor-tenis-de-corrida.png" class="d-block w-100 h-100" alt="atividades">
+            <div class="carousel-caption d-none d-block">
+              <h2>Quer mais atividades para o seu dia-a-dia?</h2>
+              <p>Encontre atividades para o seu gosto e objetivo</p>
+              <a href="login.html" class="main-btn">Comece já</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/acompanhamento.jpg" class="d-block w-100 h-100" alt="Dietas">
+            <div class="carousel-caption d-none d-block">
+              <h2>Quer ver seu progresso diariamente?</h2>
+              <p>Elaboramos o melhor acompanhamento possível para você!</p>
+              <a href="login.html" class="main-btn">Comece já</a>
+            </div>
+          </div>
+        </div>
+        <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">anterior</span>
+        </a>
+        <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </div>
+  </main>
+  <script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

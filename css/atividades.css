@@ -1,0 +1,57 @@
+.bordas {
+    background-color: #011725;
+}
+
+.card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+.title {
+    font-family: roboto;
+    font-size: 30px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.button-add {
+    margin-top: 80px;
+    background-color: #011725;
+}
+
+.tipo-atividade {
+    text-align: center;
+    font-family: roboto;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.edit {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    background-color: #011725;
+}
+
+.delete {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    background-color: #011725;
+}
+
+.dx {
+    text-align: center;
+}
+
+.xd {
+    text-align: center;
+}
